@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+
+      function setCookie(cname, cvalue) {
+        document.cookie = cname + "=" + cvalue + ";";
+      }
+      function getCookie(cname) {
+        var ca = document.cookie.split(';');
+        document.getElementById('cook').innerHTML = ca;
+      }
+    </script>
+  </head>
+  <body onload="setCookie('user','alex')">
+    welcome <br>
+    
+    <button type="button" name="button" onclick="getCookie('username')">show cookies</button>
+    <p id='cook'></p>
+
+  </body>
+
+</html>

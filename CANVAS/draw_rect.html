@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <title>
+      Canvas
+    </title>
+  </head>
+  <body>
+
+    <!-- simple rectangle -->
+    <canvas id="myCanvas" width="300" height="150" style="border:1px solid #d3d3d3;">
+      Your browser does not support the HTML5 canvas tag.</canvas>
+
+    <script>
+      /*
+      syntax context.rect(x,y,width,height);
+      x The x-coordinate of the upper-left corner of the rectangle
+      y The y-coordinate of the upper-left corner of the rectangle
+      width The width of the rectangle, in pixels
+      height The height of the rectangle, in pixels
+    */
+      var c = document.getElementById("myCanvas");
+      var ctx = c.getContext("2d");
+      ctx.beginPath();
+      ctx.rect(70, 20, 170, 100);
+      ctx.stroke();
+    </script>
+  </body>
+</html>

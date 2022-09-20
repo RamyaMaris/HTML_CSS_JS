@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+
+</head>
+
+<body>
+
+  <input type="number" id="dd">
+
+  <button type="button" name="button" onclick="draw()">Submit</button>
+  <button type="button" name="button" onclick="document.location.reload(true)">Refresh</button>
+  <p id="id"></p>
+
+
+
+
+  <script>
+
+
+    let p = document.getElementById('id');
+
+    let str = "";
+
+  //  console.log(n2);
+
+    function draw() {
+  num = document.getElementById('dd').value;
+      for (var i = 1; i <= num; i++) {
+
+        for (var j = 0; j < i; j++)
+        str += "*";
+
+        str += "<br>";
+        p.innerHTML = str;
+      }
+      str += "";
+
+
+      for (var i = 1; i <= num; i++) {
+
+        for (var j = num; j > i; j--)
+        str += "*";
+
+        str += "<br>";
+        p.innerHTML = str;
+      }
+
+    }
+  </script>
+
+
+</body>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <canvas id="circle" width="150" height="150">
+    </canvas>
+    <br><br>
+    <canvas id="rectangle" width="150" height="150">
+    </canvas>
+    <script>
+      var canvas_cir = document.getElementById("circle");
+      var ctx1 = canvas_cir.getContext("2d");
+      ctx1.beginPath();
+      ctx1.arc(55,70,50,0,2*Math.PI);
+      ctx1.stroke();
+      var canvas_rect = document.getElementById("rectangle");
+      var ctx2 = canvas_rect.getContext("2d");
+      ctx2.rect(10, 10, 125, 75);
+      ctx2.stroke();
+      ctx2.closePath();
+    </script>
+  </body>
+</html>

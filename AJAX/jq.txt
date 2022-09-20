@@ -1,0 +1,2 @@
+This is a sample file returned by AJAX,
+which simplifies the content load every time

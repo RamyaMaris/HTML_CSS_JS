@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <script type="text/javascript">
+      let temp1 = "";
+
+      for(let i=0; i<10; i++)
+      {
+        temp1 = temp1 + " * ";
+        console.log(temp1);
+    //    document.getElementById("display").innerHTML = temp1;
+        //console.log(document.getElementById("display").innerHTML = temp1);
+
+        var n = document.createElement("h2");
+        n.innerText = temp1;
+        document.body.appendChild(n);
+      }
+      for(let j=10; j>1; j--)
+      {
+        temp2 = temp3 + " * ";
+        console.log(temp2);
+    //    document.getElementById("display").innerHTML = temp1;
+        //console.log(document.getElementById("display").innerHTML = temp1);
+
+        var n = document.createElement("h2");
+        n.innerText = temp2;
+        document.body.appendChild(n);
+      }
+
+    </script>
+  </body>
+</html>

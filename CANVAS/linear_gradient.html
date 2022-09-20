@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <body>
+
+    <canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3;">
+      Your browser does not support the HTML5 canvas tag.</canvas>
+
+    <script>
+      var c = document.getElementById("myCanvas");
+      var ctx = c.getContext("2d");
+
+      /* Create gradient syntax  context.createLinearGradient(x0,y0,x1,y1);
+        x0 The x-coordinate of the start point of the gradient
+        y0 The y-coordinate of the start point of the gradient
+        x1 The x-coordinate of the end point of the gradient
+        y1 The y-coordinate of the end point of the gradient
+      */
+      var grd = ctx.createLinearGradient(0, 0, 200, 0);
+      /* addColorStop syntax gradient.addColorStop(stop,color);
+      stop A value between 0.0 and 1.0 that represents the position between start and end in a gradient
+      color A CSS color value to display at the stop position
+      */
+      grd.addColorStop(0, "blue");
+      grd.addColorStop(.5, "orange");
+      grd.addColorStop(1, "blue");
+
+      // Fill with gradient
+      ctx.fillStyle = grd;
+      ctx.fillRect(10, 10, 150, 80);
+    </script>
+
+  </body>
+</html>

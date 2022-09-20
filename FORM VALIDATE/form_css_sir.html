@@ -1,0 +1,47 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="form1_style.css">
+    <title>Basic Validation
+    </title>
+  </head>
+
+  <body>
+    <h1 style="text-align: center;">REGISTRATION FORM</h1>
+    <form name="RegForm" action="#" onsubmit="return validate()" method="post">
+      <label for="name">Name</label>
+      <input type="text" id="name" size="65" name="Name" required="required">
+      <br>
+      <label for="add">Address</label>
+      <input type="text" id="add" size="65" name="Address" required="required">
+      <br>
+      <label for="mail">Email</label>
+      <input type="text" id="mail" size="65" name="EMail" required="required">
+      <br>
+      <label for="pwd">Password</label>
+      <input type="text" id="pwd" size="65" name="Password" required="required">
+      <br>
+      <label for="phone">Contact#</label>
+      <input type="text" id="phone" size="65" name="Telephone" required="required">
+      <br>
+
+      <label for="course">Course</label>
+      <br>
+      <select type="text" id="course" name="Subject" required="required">
+        <option value="">Choose</option>
+        <option value="HTML">HTML</option>
+        <option value="MySQL">MySql</option>
+        <option value="Java">Java</option>
+        <option value="Security">Security</option>
+        <option value="Springboot">Springboot</option>
+      </select>
+      <br/>
+      <label for="comment">Comments</label>
+      <br>
+      <textarea cols="55" id="comment" name="Comment"></textarea>
+      <br><br>
+
+      <input type="submit" value="send" name="Submit"/>
+      <br><br>
+      <input type="reset" value="Reset" name="Reset"/>
+    </form>
+  </body>

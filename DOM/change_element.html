@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <p id="demo" onclick="myFunction()">Click here.</p>
+    <script>
+      let temp = 0;
+      function myFunction() {
+        document.getElementById("demo").innerHTML = "Paragraph changed!" + temp;
+        temp++;
+      }
+    </script>
+</body>
+</html>

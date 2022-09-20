@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <p id="vow"></p>
+    <p id="nvow"></p>
+    <script type="text/javascript">
+      let init_str = "AWEnioUaeOINMB";
+      let str = init_str.toLowerCase();
+       console.log(str);
+      for(i = 0; i<str.length; i++)
+      {
+        if(str[i] == "a" || str[i] == "e" || str[i] == "i" || str[i] == "o" || str[i] == "u")
+        {
+          document.getElementById('vow').innerHTML += str[i];
+        }
+        else
+        {
+          document.getElementById('nvow').innerHTML += str[i];
+        }
+      }
+    </script>
+
+  </body>
+</html>

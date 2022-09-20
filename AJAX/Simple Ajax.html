@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <style>
+      .temp {
+        color: blue;
+      }
+    </style>
+  </head>
+
+  <body>
+    <script>
+      function load() {
+        const x = new XMLHttpRequest();
+        x.onload = function () {
+          document.getElementById('b').innerHTML = this.responseText;
+          document.getElementById('b').className = "temp";
+        }
+        x.open("GET", "jq.txt");
+        x.send();
+      }
+    </script>
+
+    <div>
+
+      <h1 id='b'>Sample XML HTTP request object</h1>
+      <button onclick="load()">Change</button>
+    </div>
+  </body>
+
+</html>

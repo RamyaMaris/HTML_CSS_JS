@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+    <style media="screen">
+      .input {
+        display: flex;
+        background-color:#ab5df0;
+        width: 20%;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        border: 3px solid black;
+
+      }
+      <!-- .input > div {
+        background-color: f7f7f7;
+        margin: 10px;
+        padding: 20px;
+        width: 25px;
+        height: 25px;
+        text-align: center;
+      } -->
+
+      .contain {
+        display: flex;
+        background-color: #ab5df0;
+        width: 20%;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+      .contain > div {
+        background-color: #f7f7f7;
+        margin: 10px;
+        padding: 20px;
+        width: 25px;
+        height: 25px;
+        text-align: center;
+      }
+
+    </style>
+
+  </head>
+  <body>
+
+
+<div class="input">
+  <div>
+      <input id = "inp" type="text" name="" value="0">
+  </div>
+
+</div>
+
+          <div class="contain">
+
+
+          <div onclick="calc('1');">1</div>
+          <div onclick="calc('2');">2</div>
+          <div onclick="calc('3');">3</div>
+          <div onclick="calc('4');">4</div>
+          <div onclick="calc('5');">5</div>
+          <div onclick="calc('6');">6</div>
+          <div onclick="calc('7');">7</div>
+          <div onclick="calc('8');">8</div>
+          <div onclick="calc('9');">9</div>
+          <div onclick="calc('0');">0</div>
+          <div onclick="capture_opr('+');">+</div>
+          <div onclick="capture_opr('-');">-</div>
+          <div onclick="capture_opr('*');">*</div>
+          <div onclick="capture_opr('/');">/</div>
+            <div onclick="cls();">c</div>
+          <div onclick="equals();">=</div>
+
+        </div>
+
+        <script src="calc_sample.js">  </script>
+  </body>
+</html>

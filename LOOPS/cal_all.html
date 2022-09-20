@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      div {
+        height: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <form action="javascript:void(0);">
+        <input type="number" id="n1">
+        <select id="opr" value="">
+          <option value="">Choose operation</option>
+          <option value="+">add</option>
+          <option value="-">subtract</option>
+          <option value="*">multiply</option>
+          <option value="/">divide</option>
+          <option value="%">modulus</option>
+        </select>
+        <input type="number" id="n2">
+        <button onclick="ans()">=</button>
+        <input type="text" id="res" value="">
+      </form>
+    </div>
+    <script type="text/javascript">
+      function ans() {
+        var n1 = document.getElementById("n1").value;
+        var n2 = document.getElementById("n2").value;
+        var opr = document.getElementById("opr").value;
+        res = n1 + opr + n2
+        document.getElementById("res").value = eval(res);
+      }
+    </script>
+  </body>
+</html>

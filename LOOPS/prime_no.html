@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1 id = "dis"></h1>
+    <script type="text/javascript">
+        const number = parseInt(prompt('Enter an integer: '));
+        let isPrime = true;
+        if(number == 1)
+        {
+          console.log("1 is neither prime nor composite number");
+          document.getElementById("dis").innerHTML = "1 is neither prime nor composite number";
+        }
+        else if(number > 1)
+        {
+          for(let i =2; i<number; i++)
+          {
+            if(number%i == 0)
+            {
+              isPrime = false;
+              break;
+            }
+          }
+          if(isPrime)
+          {
+            console.log(number+" is a prime number");
+            document.getElementById("dis").innerHTML = number+" is a prime number";
+          }
+          else {
+            console.log(number+" is not a prime number");
+            document.getElementById("dis").innerHTML = number+" is not a prime number";
+          }
+        }
+    </script>
+  </body>
+</html>

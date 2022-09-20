@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="form_val.css">
+    <!-- <script type="text/javascript">
+      // alvin coding
+    function checkNum() {
+      let contact_num = document.getElementById("contact").value;
+      let check_symbol = "";
+      console.log(contact_num);
+      for (i = 0; i <= contact_num.length - 1; i++) {
+        let check = contact_num.charCodeAt(i);
+        console.log(check);
+        if ((check != 43 && check != 45) && (check < 48 || check > 57)) {
+          window.alert("Please only type numbers or + and - for the contact number");
+          document.getElementById("contact").value = "";
+          focus("contact");
+          break;
+        }
+      }
+    }
+  </script> -->
+
+    <script type="text/javascript">
+      function check() {
+        var check_cont = false;
+        var num = document.getElementById("cont").value;
+         console.log(num);
+        for (let i = 0; i < num.length; i++)
+        {
+          if (num.charCodeAt(i) == 43 || num.charCodeAt(i) == 45 || (num.charCodeAt(i) > 47 && num.charCodeAt(i) <58))
+          {
+            check_cont = true;
+            console.log(check_cont);
+          }
+
+          else
+          {
+            console.log(check_cont);
+            check_cont = false;
+            break;
+          }
+
+        }
+        if(check_cont == false)
+        alert("Enter valid Phone no");
+
+          }
+    </script>
+  </head>
+  <body>
+
+
+      <form action="" >
+        <!-- onsubmit="return check()" -->
+        <div class="name">
+          <h1 class="heading"> Registration Form </h1>
+          <div class = "name">
+          <label for="name">Name:</label>
+          <br>
+          <input type="text" name="name" value="" required="required">
+          <br>
+          <label for="address">Address:</label>
+          <br>
+          <input id="address1" type="text" name="address" value="" required="required">
+          <br>
+        <label for="email">Email:</label>
+        <br>
+        <input type="text" name="email" value="" required="required">
+        <br>
+          <label for="password">Password:</label>
+          <br>
+          <input type="password" name="password" value="" required="required">
+  <br>
+  <label for="contact">Contact:</label>
+  <br>
+  <input id="cont" type="text" name="contact" value="" required="required">
+
+  <br>
+  <label for="course">Course:</label>
+  <br>
+    <!-- <input type="text" name="course" value="" required="required"> -->
+    <select name="course" id="course" required="required">
+      <option value="">course</option>
+      <option value="java">JAVA</option>
+      <option value="js">JAVASCRIPT</option>
+      <option value="css">CSS</option>
+      <option value="html">HTML</option>
+    </select>
+  <br>
+  <label for="comment">Comments:</label>
+  <br>
+  <textarea cols="35" name="comment" value="" class="commt" required="required"></textarea>
+  <br>
+  <br>
+  <button type="submit" name="" onclick="check()">Send</button>
+  <br>
+  <br>
+  <button type="reset" name="">Reset</button>
+
+        </div>
+
+        </div>
+
+        </form>
+
+  </body>
+</html>

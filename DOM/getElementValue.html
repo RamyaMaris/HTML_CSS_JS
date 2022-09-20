@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      h1 {
+        font-size: 20px;
+        color: red;
+        text-transform: capitalize;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="text" id="fname">
+    <button type="button" onclick="getName();">Add
+    </button>
+
+    <script type="text/javascript">
+
+      function getName() {
+        var name = document.getElementById("fname").value;
+        // alert(name);
+        var n = document.createElement("h1");
+        n.innerText = name;
+        document.body.appendChild(n);
+
+      }
+    </script>
+  </body>
+</html>

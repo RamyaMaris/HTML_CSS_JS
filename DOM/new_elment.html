@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <p id="demo" onclick="myFunction()">Click here.</p>
+    <script>
+
+      function myFunction() {
+        let x = document.getElementById("demo").innerHTML;
+        if (x == "Click here.")
+          document.getElementById("demo").innerHTML = "Paragraph changed!";
+        else
+          document.getElementById("demo").innerHTML = "Click here.";
+        }
+    </script>
+</body>
+</html>

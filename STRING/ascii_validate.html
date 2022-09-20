@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script type="text/javascript">
+      function check() {
+        var num = document.getElementById("chk").value;
+        for (i = 0; i < num.length; i++)
+          if (num.charCodeAt(i) > 47 && num.charCodeAt(i) < 58)
+            document.getElementById('msg').innerHTML = "correct";
+          else
+            document.getElementById('msg').innerHTML = "Please enter only numbers";
+          }
+    </script>
+  </head>
+  <body>
+    <form action="#" onsubmit="return check()">
+      <label for="chk">Enter a number</label>
+      <input type="text" id="chk">
+      <br>
+      <input type="submit" value="Submt">
+    </form>
+    <p id="msg"></p>
+
+  </body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      h1 {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="res"></h1>
+    <script type="text/javascript">
+      // program to generate a multiplication table take input from the user
+      const number = parseInt(prompt('Enter an integer: '));
+
+      //creating a multiplication table
+      let res = 0;
+      for (let i = 1; i <= 10; i++) {
+        if (res == 0)
+          res = number + " x " + i + " = " + (
+            number * i
+          ) + "<br>";
+        else {
+          res += number + " x " + i + " = " + (
+            number * i
+          ) + "<br>";
+        }
+         document.getElementById("res").innerHTML += number + " x " + i + " = " + (   number * i ) + "<br>";
+      }
+    //  document.getElementById("res").innerHTML = res;
+    </script>
+  </body>
+</html>

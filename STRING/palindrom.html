@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <div>
+      <form action="javascript:void(0);">
+<input type="text" id = "val1" name="" value="">
+<button onclick="pal()">CHECK PALINDROM</button>
+      </form>
+    </div>
+    <script type="text/javascript">
+      function pal()
+      {
+        // let str = "madam";
+        let str = document.getElementById("val1").value;
+        let l = str.length;
+        rev_str = "";
+        while (l >= 1) {
+          rev_str += str[l - 1];
+          l--;
+        }
+        console.log(rev_str);
+        if(str == rev_str)
+        {
+          alert(str +" is a Palindrom");
+          console.log("It is a Palindrom");
+        }
+        else
+        {
+          alert("No its not a Palindrom");
+          console.log("False");
+        }
+      }
+
+    </script>
+  </body>
+</html>

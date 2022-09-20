@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script>
+      function setCookie() {
+        var cname = document.getElementById('user_name').value;
+        var cage = document.getElementById('user_age').value;
+        document.cookie = cname + "=" + cage + ";";
+      }
+    </script>
+  </head>
+  <body>
+    <form action="" method="">
+      <div>
+
+        <div>
+          <table>
+            <tr>
+              <th>User Reigistration</th>
+            </tr>
+            <tr>
+              <td>
+                  <label for="userName">User Name:</label>
+              </td>
+              <td>
+                <input id="user_name" type="text" name="userName" value="" required="required">
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="userPwd">Password:</label>
+              </td>
+              <td>
+                <input type="password" name="userPwd" value="" required="required">
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="rePwd">Retype Password:</label>
+              </td>
+              <td>
+                <input type="password" name="rePwd" value="" required="required">
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="userAge">Age:</label>
+              </td>
+              <td>
+                <input id="user_age" type="number" name="userAge" value="" required="required">
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <button type="submit" name="" onclick="setCookie()">Submit</button>
+              </td>
+              <td>
+                <button type="reset" name="">Reset</button>
+              </td>
+            </tr>
+          </table>
+
+        </div>
+      </div>
+
+    </form>
+  </body>
+</html>

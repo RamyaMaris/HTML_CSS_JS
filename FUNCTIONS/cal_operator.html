@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script type="text/javascript" src="JS\cal_operator.js"></script>
+  </head>
+  <body>
+    <p id="res"></p>
+    <button type="button" name="button" onclick="process_result()">ADD</button>
+
+    <script type="text/javascript">
+      function process_result() {
+        alert("hi");
+        let n = 10,
+          m = 20,
+
+        let res = eval_nums(opr, n, m);
+        console.log(res);
+        document.getElementById('res').innerHTML = res;
+
+      }
+    </script>
+
+  </body>
+</html>

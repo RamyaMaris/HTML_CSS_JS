@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      let x = prompt("enter");
+      console.log(x);
+      let is_int = true;
+      for(let i=0; i<x.length; i++)
+      {
+        let temp = x.charCodeAt(i);
+        if (!(temp >= 48 && temp <= 57)) {
+          is_int = false;
+          break;
+        }
+
+        // if(temp >= 48 && temp <= 57)
+        // {
+        //   is_int = true;
+        //   console.log(is_int);
+        // }
+        // else
+        // {
+        //   is_int = false;
+        //   console.log(is_int);
+        //   break;
+        // }
+      }
+      console.log(is_int);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      let test_str = "lowercase";
+      let op_str = "";
+      for (i = 0; i < test_str.length; i++) {
+        let tmp = test_str.charCodeAt(i) - 32;
+        op_str += String.fromCharCode(tmp);
+      }
+      console.log(op_str);
+    </script>
+
+  </body>
+</html>
